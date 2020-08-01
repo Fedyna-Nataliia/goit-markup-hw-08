@@ -1,0 +1,89 @@
+body {
+
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: $default-font;
+  letter-spacing: -0.015em;
+  font-size: 14px;
+  line-height: 1.71;
+    
+}
+  
+.list  {
+  padding: 0;
+  margin: 0;
+
+  text-decoration: none;
+  list-style: none;
+}
+
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+   
+}
+
+.link {
+  list-style: none;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 10px 29px;
+  
+  color: $primary-white-color;
+  background-color: $accent-color;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+
+  text-align: center;
+  text-decoration: none;
+ 
+}
+
+/* Section */
+
+.section {
+  margin-top: 0;
+  margin-bottom: 0;
+ padding-bottom: 94px;
+}
+
+.ul {
+  list-style: none;
+}
+
+.logo-list .link {
+  color: $primary-text-color;
+
+  text-decoration: none;
+  cursor: pointer;
+
+}
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.section-list .title {
+  color: $title-text-color;
+}
+
+.section-list .link {
+
+  text-decoration: none;   
+}

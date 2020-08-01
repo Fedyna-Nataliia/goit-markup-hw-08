@@ -1,0 +1,50 @@
+.section-feature {
+    padding-top: 94px;
+}
+
+.feature-list {
+    display: flex;
+
+}
+
+.feature-list .title {
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.feature-list .link {
+    display: block;
+    width: calc((100% - 90px) / 4);
+   
+    color: $primary-text-color;
+    text-decoration: none; 
+}
+
+.feature-list .link:not(:last-child) {
+    margin-right: 30px;
+}
+
+.feature-list .feature {
+    height: 120px;
+    background-color: #F5F4FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.link-feature {
+    width: 70px;
+    height: 70px;
+}
+
+.feature-list p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
