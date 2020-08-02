@@ -34,6 +34,18 @@ body {
   list-style: none;
 }
 
+.visually-hidden
+{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -57,7 +69,7 @@ body {
 .section {
   margin-top: 0;
   margin-bottom: 0;
- padding-bottom: 94px;
+ padding-bottom: 60px;
 }
 
 .ul {
