@@ -1,14 +1,30 @@
 .section-team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     background-color: $background-color-sekondary;
 }
 
 .team-list {
-    display: flex;
+    //display: flex;
     
 }
+
+.team-list .link {
+    display: block;
+    //width: calc((100% - 90px) / 4);
+    text-decoration: none;  
+    background-color: $primary-white-color;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px; 
+
+    padding-bottom: 24px;
+}
+
+.team-list .link:not(:last-child) {
+    margin-bottom: 30px;
+} 
+
 
 .team-list .title {
     margin-bottom: 10px;
@@ -27,19 +43,6 @@
     text-align: center;
 }
 
-.team-list .link {
-    display: block;
-    width: calc((100% - 90px) / 4);
-    text-decoration: none;  
-    background-color: $primary-white-color;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-    border-radius: 0px 0px 4px 4px; 
-}
-
-.team-list .link:not(:last-child) {
-    margin-right: 30px;
-} 
-
 .link-icon {
     width: 20px;
     height: 20px;  
@@ -48,9 +51,9 @@
 .logo-list {
     display: flex;
     margin-top: 0;
-    margin-bottom: 24px;
-    margin-right: 32px;
-    margin-left: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
 }
 
 .logo-list .link {
@@ -63,6 +66,7 @@
     justify-content: center;
     fill: $primary-text-color;
     box-shadow: none;
+    padding: 0px;
    
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     

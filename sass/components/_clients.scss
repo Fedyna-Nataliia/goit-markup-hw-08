@@ -1,24 +1,24 @@
 .section-client {
-    padding-top: 62px;
-    padding-bottom: 126px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .client-list {
-    //display: flex;
+    display: flex;
     flex-wrap: wrap; 
    
 }
   
 .client-list .link {
-    //display: inline-flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     text-align: center; 
 
-    width: calc((100% - 150px) / 6);
+    width: calc((100% - 30px) / 2);
     height: 90px;
     text-decoration: none;  
-    border: 1px solid #AFB1B8;
+    border: 1px solid $border-color;
     border-radius: 4px;
     
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -32,7 +32,7 @@
 .client-list .item {
     display: flex;
     justify-content: center;
-    fill: #AFB1B8;
+    fill: $border-color;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -43,6 +43,10 @@
 }
 
 
-.client-list .link:not(:last-child) {
+.client-list .link:not(:nth-child(2n)) {
     margin-right: 30px;
+} 
+
+.client-list .link:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
 } 

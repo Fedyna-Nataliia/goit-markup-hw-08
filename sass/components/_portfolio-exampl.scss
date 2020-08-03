@@ -1,5 +1,5 @@
 .example-list {
-    display: flex;
+    //display: flex;
     flex-wrap: wrap;
  
     padding-top: 0;
@@ -18,8 +18,8 @@
 }
  
 .example-list .item {
-    display: block;
-    width: calc((100% - 60px) / 3);
+    //display: block;
+    //width: calc((100% - 60px) / 3);
     height: 404px;
     color: $primary-text-color;
     border: 1px solid #EEEEEE;
@@ -37,7 +37,7 @@
 }
  
 .example-list .item:not(:nth-child(3n)) {
-    margin-right: 30px;
+   // margin-right: 30px;
 } 
  
 .example-list .item:not(:nth-last-child(-n + 3)) {
