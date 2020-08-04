@@ -3,20 +3,28 @@
 }
 
 .feature-list {
-    //display: flex;
-
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;  
+    }
+    
 }
 
 .feature-list .link {
     display: block;
     //width: calc((100% - 90px) / 4);
-   
     color: $primary-text-color;
     text-decoration: none; 
-}
 
-.feature-list .link:not(:last-child) {
-    margin-bottom: 30px;
+    @media screen and (min-width: 768px){
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+      }
+
+      @media screen and (min-width: 1600px){
+        width: calc((100% - 12 * 15px) / 6);
+    }
 }
 
 .feature-list .feature {

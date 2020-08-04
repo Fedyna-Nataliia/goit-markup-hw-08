@@ -61,8 +61,12 @@
 
 .auth-nav {
     margin-left: auto;
-    display: flex; 
+    //display: flex; 
     align-items:center;  
+
+    @media screen and (min-width: 1600px){
+        display: flex;
+    }
 
 }
 

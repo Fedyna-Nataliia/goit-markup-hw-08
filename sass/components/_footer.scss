@@ -8,9 +8,14 @@
 }
 
 .page-footer .container {
-   // display: flex;
-   justify-content: space-between;
-    align-items: baseline;
+  // display: flex;
+  //justify-content: space-between;
+    //align-items: baseline;
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;  
+    } 
 }
 
 .logo.inverse {
@@ -19,6 +24,11 @@
 
 .footer-address {
    padding-bottom: 60px;
+
+   @media screen and (min-width: 768px) {
+       margin-left: 76px;
+       margin-right: 165px;
+   }
 }
 
 .footer-address .logo {
@@ -49,6 +59,7 @@
     //width: 206px;
     color: $primary-white-color;
     padding-bottom: 60px;
+
 }
 
 .footer-social .logo-list {
@@ -65,7 +76,7 @@
 .form {
     //width: 570px;
     padding: 0;
-   
+
 }
 
 .form .group {
